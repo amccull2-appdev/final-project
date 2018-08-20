@@ -1,0 +1,98 @@
+<h1>
+  All etfs
+</h1>
+
+<a href="/etfs/new">
+  Add a new etf
+</a>
+
+<hr>
+
+<table class="table">
+  <tr>
+    <th>
+      ID
+    </th>
+
+    <th>
+      Ticker
+    </th>
+
+    <th>
+      Name
+    </th>
+
+    <th>
+      User
+    </th>
+
+    <th>
+      Rating
+    </th>
+
+    <th>
+      Fee
+    </th>
+
+    <th>
+      Similarity ranking
+    </th>
+
+    <th>
+      Created at
+    </th>
+
+    <th>
+      Updated at
+    </th>
+
+    <th>
+    </th>
+  </tr>
+
+  <% @etfs.each do |etf| %>
+  <tr>
+    <td>
+      <%= etf.id %>
+    </td>
+
+    <td>
+      <%= etf.ticker %>
+    </td>
+
+    <td>
+      <%= etf.name %>
+    </td>
+
+    <td>
+      <%= etf.user_id %>
+    </td>
+
+    <td>
+      <%= etf.rating %>
+    </td>
+
+    <td>
+      <%= etf.fee %>
+    </td>
+
+    <td>
+      <%= etf.similarity_ranking %>
+    </td>
+
+    <td>
+      <%= time_ago_in_words(etf.created_at) %> ago
+    </td>
+
+    <td>
+      <%= time_ago_in_words(etf.updated_at) %> ago
+    </td>
+
+    <td>
+      <a href="/etfs/<%= etf.id %>">
+        Show details
+      </a>
+    </td>
+  </tr>
+  <% end %>
+</table>

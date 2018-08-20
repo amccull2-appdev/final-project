@@ -1,0 +1,49 @@
+<h1>
+  Holding #<%= @holding.id %> details
+</h1>
+
+<a href="/holdings/<%= @holding.id %>/edit">
+  Edit holding
+</a>
+
+<hr>
+
+<dl>
+  <dt>
+    User
+  </dt>
+  <dd>
+    <%= @holding.user_id %>
+  </dd>
+
+  <dt>
+    Fund
+  </dt>
+  <dd>
+    <%= @holding.fund_id %>
+  </dd>
+
+  <dt>
+    Created at
+  </dt>
+  <dd>
+    <%= time_ago_in_words(@holding.created_at) %> ago
+  </dd>
+
+  <dt>
+    Updated at
+  </dt>
+  <dd>
+    <%= time_ago_in_words(@holding.updated_at) %> ago
+  </dd>
+</dl>
+
+<a href="/delete_holding/<%= @holding.id %>">
+  Delete holding
+</a>
+
+<hr>
+
+<a href="/holdings">
+  Go back
+</a>

@@ -1,0 +1,77 @@
+<h1>
+  Etf #<%= @etf.id %> details
+</h1>
+
+<a href="/etfs/<%= @etf.id %>/edit">
+  Edit etf
+</a>
+
+<hr>
+
+<dl>
+  <dt>
+    Ticker
+  </dt>
+  <dd>
+    <%= @etf.ticker %>
+  </dd>
+
+  <dt>
+    Name
+  </dt>
+  <dd>
+    <%= @etf.name %>
+  </dd>
+
+  <dt>
+    User
+  </dt>
+  <dd>
+    <%= @etf.user_id %>
+  </dd>
+
+  <dt>
+    Rating
+  </dt>
+  <dd>
+    <%= @etf.rating %>
+  </dd>
+
+  <dt>
+    Fee
+  </dt>
+  <dd>
+    <%= @etf.fee %>
+  </dd>
+
+  <dt>
+    Similarity ranking
+  </dt>
+  <dd>
+    <%= @etf.similarity_ranking %>
+  </dd>
+
+  <dt>
+    Created at
+  </dt>
+  <dd>
+    <%= time_ago_in_words(@etf.created_at) %> ago
+  </dd>
+
+  <dt>
+    Updated at
+  </dt>
+  <dd>
+    <%= time_ago_in_words(@etf.updated_at) %> ago
+  </dd>
+</dl>
+
+<a href="/delete_etf/<%= @etf.id %>">
+  Delete etf
+</a>
+
+<hr>
+
+<a href="/etfs">
+  Go back
+</a>

@@ -1,0 +1,46 @@
+<!-- Validation failure messages -->
+<% if @holding.present? %>
+  <% if @holding.errors.any? %>
+    <% @holding.errors.full_messages.each do |message| %>
+      <div class="alert alert-danger">
+        <%= message %>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
+
+<h1>
+  Add a new holding
+</h1>
+
+<hr>
+
+<form action="/create_holding" method="post">
+  <!-- Label and input for user_id -->
+  <div class="form-group">
+    <label for="user_id">
+      User
+    </label>
+
+    <input type="text" id="user_id" name="user_id" class="form-control" value="<%= @holding.try(:user_id) %>">
+  </div>
+
+  <!-- Label and input for fund_id -->
+  <div class="form-group">
+    <label for="fund_id">
+      Fund
+    </label>
+
+    <input type="text" id="fund_id" name="fund_id" class="form-control" value="<%= @holding.try(:fund_id) %>">
+  </div>
+
+  <button class="btn btn-block btn-outline-secondary">
+    Create holding
+  </button>
+</form>
+
+<hr>
+
+<a href="/holdings">
+  Go back
+</a>

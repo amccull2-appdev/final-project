@@ -1,0 +1,66 @@
+<h1>
+  All holdings
+</h1>
+
+<a href="/holdings/new">
+  Add a new holding
+</a>
+
+<hr>
+
+<table class="table">
+  <tr>
+    <th>
+      ID
+    </th>
+
+    <th>
+      User
+    </th>
+
+    <th>
+      Fund
+    </th>
+
+    <th>
+      Created at
+    </th>
+
+    <th>
+      Updated at
+    </th>
+
+    <th>
+    </th>
+  </tr>
+
+  <% @holdings.each do |holding| %>
+  <tr>
+    <td>
+      <%= holding.id %>
+    </td>
+
+    <td>
+      <%= holding.user_id %>
+    </td>
+
+    <td>
+      <%= holding.fund_id %>
+    </td>
+
+    <td>
+      <%= time_ago_in_words(holding.created_at) %> ago
+    </td>
+
+    <td>
+      <%= time_ago_in_words(holding.updated_at) %> ago
+    </td>
+
+    <td>
+      <a href="/holdings/<%= holding.id %>">
+        Show details
+      </a>
+    </td>
+  </tr>
+  <% end %>
+</table>

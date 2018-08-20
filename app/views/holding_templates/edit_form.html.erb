@@ -1,0 +1,44 @@
+<!-- Validation failure messages -->
+<% if @holding.errors.any? %>
+  <% @holding.errors.full_messages.each do |message| %>
+    <div class="alert">
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<h1>
+  Edit holding #<%= @holding.id %>
+</h1>
+
+<hr>
+
+<form action="/update_holding/<%= @holding.id %>" method="post">
+  <!-- Label and input for user_id -->
+  <div class="form-group">
+    <label for="user_id">
+      User
+    </label>
+
+    <input type="text" id="user_id" name="user_id" class="form-control" value="<%= @holding.user_id %>">
+  </div>
+
+  <!-- Label and input for fund_id -->
+  <div class="form-group">
+    <label for="fund_id">
+      Fund
+    </label>
+
+    <input type="text" id="fund_id" name="fund_id" class="form-control" value="<%= @holding.fund_id %>">
+  </div>
+
+  <button class="btn btn-block btn-outline-secondary">
+    Update holding
+  </button>
+</form>
+
+<hr>
+
+<a href="/holdings">
+  Go back
+</a>
