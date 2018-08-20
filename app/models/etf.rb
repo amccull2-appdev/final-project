@@ -19,6 +19,6 @@ class Etf < ApplicationRecord
   validates :ticker, :presence => true
   validates :name, :presence => true
   
-  has_many :holdings, :dependent => :destroy
-  has_many :owners
+  has_many :holdings, :dependent => :destroy, :foreign_key => "fund_id"
+  # has_many :owners
 end

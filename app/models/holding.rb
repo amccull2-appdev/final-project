@@ -10,8 +10,8 @@
 #
 
 class Holding < ApplicationRecord
-  validates :user_id, :presence => true
-  validates :fund_id, :presence => true
+  # validates :user_id, :presence => true
+  # validates :fund_id, :presence => true
   validates :fund_id, :uniqueness => { :scope => [:user_id], :message => "You already own this fund" }
   
   belongs_to :user
