@@ -11,6 +11,7 @@
 #  similarity_ranking :string
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
+#  category           :string
 #
 
 class Etf < ApplicationRecord

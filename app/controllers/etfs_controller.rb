@@ -24,6 +24,7 @@ class EtfsController < ApplicationController
     @etf.rating = params.fetch("rating")
     @etf.fee = params.fetch("fee")
     @etf.similarity_ranking = params.fetch("similarity_ranking")
+    @etf.category = params.fetch("category")
 
     if @etf.valid?
       @etf.save
@@ -49,6 +50,7 @@ class EtfsController < ApplicationController
     @etf.rating = params.fetch("rating")
     @etf.fee = params.fetch("fee")
     @etf.similarity_ranking = params.fetch("similarity_ranking")
+    @etf.category = params.fetch("category")
 
     if @etf.valid?
       @etf.save

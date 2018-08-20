@@ -2,17 +2,10 @@
   All ETFs
 </h1>
 
-<a href="/etfs/new">
-  Add a new etf
-</a>
-
 <hr>
 
 <table class="table">
   <tr>
-    <th>
-      ID
-    </th>
 
     <th>
       Ticker
@@ -20,10 +13,6 @@
 
     <th>
       Name
-    </th>
-
-    <th>
-      User
     </th>
 
     <th>
@@ -36,14 +25,6 @@
 
     <th>
       Similarity ranking
-    </th>
-
-    <th>
-      Created at
-    </th>
-
-    <th>
-      Updated at
     </th>
 
     <th>
@@ -78,14 +59,6 @@
 
     <td>
       <%= etf.similarity_ranking %>
-    </td>
-
-    <td>
-      <%= time_ago_in_words(etf.created_at) %> ago
-    </td>
-
-    <td>
-      <%= time_ago_in_words(etf.updated_at) %> ago
     </td>
 
     <td>
