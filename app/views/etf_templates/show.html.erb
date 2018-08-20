@@ -1,5 +1,5 @@
 <h1>
-  Etf #<%= @etf.id %> details
+  <%= @etf.name %> <%= @etf.ticker %>
 </h1>
 
 <a href="/etfs/<%= @etf.id %>/edit">
@@ -9,39 +9,19 @@
 <hr>
 
 <dl>
-  <dt>
-    Ticker
-  </dt>
-  <dd>
-    <%= @etf.ticker %>
-  </dd>
 
   <dt>
-    Name
-  </dt>
-  <dd>
-    <%= @etf.name %>
-  </dd>
-
-  <dt>
-    User
-  </dt>
-  <dd>
-    <%= @etf.user_id %>
-  </dd>
-
-  <dt>
-    Rating
+    Morningstar Analyst Rating
   </dt>
   <dd>
     <%= @etf.rating %>
   </dd>
 
   <dt>
-    Fee
+    Net Expense Ratio
   </dt>
   <dd>
-    <%= @etf.fee %>
+    <%= @etf.fee %>%
   </dd>
 
   <dt>
@@ -51,19 +31,6 @@
     <%= @etf.similarity_ranking %>
   </dd>
 
-  <dt>
-    Created at
-  </dt>
-  <dd>
-    <%= time_ago_in_words(@etf.created_at) %> ago
-  </dd>
-
-  <dt>
-    Updated at
-  </dt>
-  <dd>
-    <%= time_ago_in_words(@etf.updated_at) %> ago
-  </dd>
 </dl>
 
 <a href="/delete_etf/<%= @etf.id %>">
