@@ -15,8 +15,8 @@
 #
 
 class Etf < ApplicationRecord
-  validates :user_id, :presence => true
-  validates :name, :presence => true  
+  validates :ticker, :presence => true
+  validates :name, :presence => true
   
   has_many :holdings, :dependent => :destroy
   has_many :owners

@@ -1,53 +1,53 @@
-Name,Ticker,Category,Rating,Fee
-Vanguard Small-Cap ETF,VB,US Fund Small Blend,Gold,0.05
-Schwab US Small-Cap ETF,SCHA,US Fund Small Blend,Gold,0.05
-SPDR Portfolio Small Cap ETF,SPSM,US Fund Small Blend,,0.05
-Vanguard Small-Cap Value ETF,VBR,US Fund Small Value,Silver,0.07
-iShares Core S&P Small-Cap ETF,IJR,US Fund Small Blend,Gold,0.07
-Vanguard Small-Cap Growth ETF,VBK,US Fund Small Growth,Silver,0.07
-SPDR SSGA US Small Cap Low Volatil ETF,SMLV,US Fund Small Blend,,0.12
-SPDR S&P 600 Small Cap Value ETF,SLYV,US Fund Small Value,,0.15
-Vanguard Russell 2000 ETF,VTWO,US Fund Small Blend,Bronze,0.15
-Vanguard S&P Small-Cap 600 ETF,VIOO,US Fund Small Blend,,0.15
-SPDR S&P 600 Small Cap ETF,SLY,US Fund Small Blend,,0.15
-SPDR S&P 600 Small Cap Growth ETF,SLYG,US Fund Small Growth,,0.15
-iShares Russell 2000 ETF,IWM,US Fund Small Blend,Bronze,0.19
-Vanguard S&P Small-Cap 600 Value ETF,VIOV,US Fund Small Value,,0.20
-Vanguard Russell 2000 Value ETF,VTWV,US Fund Small Value,,0.20
-Vanguard Russell 2000 Growth ETF,VTWG,US Fund Small Growth,,0.20
-Vanguard S&P Small-Cap 600 Growth ETF,VIOG,US Fund Small Growth,,0.20
-iShares Russell 2000 Value ETF,IWN,US Fund Small Value,Neutral,0.24
-iShares Russell 2000 Growth ETF,IWO,US Fund Small Growth,Neutral,0.24
-iShares S&P Small-Cap 600 Value ETF,IJS,US Fund Small Value,Bronze,0.25
-Invesco S&P SmallCap Low Volatility ETF,XSLV,US Fund Small Value,Bronze,0.25
-Schwab Fundamental US Small Company ETF,FNDA,US Fund Small Blend,Bronze,0.25
-iShares Morningstar Small-Cap ETF,JKJ,US Fund Small Blend,,0.25
-Invesco Russell 2000 Equal Weight ETF,EQWS,US Fund Small Blend,,0.25
-iShares S&P Small-Cap 600 Growth ETF,IJT,US Fund Small Growth,Bronze,0.25
-iShares Morningstar Small-Cap Value ETF,JKL,US Fund Small Value,,0.30
-iShares Edge MSCI Mltfct USA SmCp ETF,SMLF,US Fund Small Blend,,0.30
-iShares Morningstar Small-Cap Growth ETF,JKK,US Fund Small Growth,,0.30
-Invesco S&P SmallCap 600 Pure Value ETF,RZV,US Fund Small Value,,0.35
-Invesco S&P MidCap 400 Pure Value ETF,RFV,US Fund Small Value,,0.35
-VictoryShares US Discv Enh Vol Wtd ETF,CSF,US Fund Small Blend,,0.35
-Invesco S&P SmallCap 600 Pure Gr ETF,RZG,US Fund Small Growth,,0.35
-WisdomTree US SmallCap Dividend ETF,DES,US Fund Small Value,Bronze,0.38
-WisdomTree US SmallCap Earnings ETF,EES,US Fund Small Blend,,0.38
-WisdomTree US SmallCap Qual Div Gr ETF,DGRS,US Fund Small Blend,,0.38
-Oppenheimer S&P SmallCap 600 Revenue ETF,RWJ,US Fund Small Value,,0.39
-Invesco Russell 2000 Pure Value ETF,PXSV,US Fund Small Value,,0.39
-Invesco FTSE RAFI US 1500 Small-Mid ETF,PRFZ,US Fund Small Blend,Bronze,0.39
-Invesco Russell 2000 Pure Growth ETF,PXSG,US Fund Small Growth,,0.39
-ProShares Russell 2000 Dividend Growers,SMDV,US Fund Small Value,,0.40
-Invesco S&P SmallCap 600 Equal Wt ETF,EWSC,US Fund Small Blend,,0.40
-Invesco Wilshire Micro-Cap ETF,WMCR,US Fund Small Blend,,0.58
-First Trust Dow Jones Sel MicroCap ETF,FDM,US Fund Small Value,,0.60
-iShares Micro-Cap ETF,IWC,US Fund Small Blend,Neutral,0.60
-Invesco DWA SmallCap Momentum ETF,DWAS,US Fund Small Growth,,0.60
-First Trust Small Cap Core AlphaDEX ETF,FYX,US Fund Small Blend,,0.63
-First Trust Small Cap Val AlphaDEX ETF,FYT,US Fund Small Value,,0.70
-First Trust Mid Cap Value AlphaDEX ETF,FNK,US Fund Small Value,,0.70
-First Trust Small Cap Gr AlphaDEX ETF,FYC,US Fund Small Growth,,0.70
-AdvisorShares Cornerstone Small Cap ETF,SCAP,US Fund Small Growth,,0.90
-AlphaMark Actively Managed Small Cap ETF,SMCP,US Fund Small Growth,,0.92
-Invesco Zacks Micro Cap ETF,PZI,US Fund Small Value,,1.24
+id,name,ticker,category,rating,fee
+1,Vanguard Small-Cap ETF,VB,Small Blend,Gold,0.05
+2,Schwab US Small-Cap ETF,SCHA,Small Blend,Gold,0.05
+3,SPDR Portfolio Small Cap ETF,SPSM,Small Blend,,0.05
+4,Vanguard Small-Cap Value ETF,VBR,Small Value,Silver,0.07
+5,iShares Core S&P Small-Cap ETF,IJR,Small Blend,Gold,0.07
+6,Vanguard Small-Cap Growth ETF,VBK,Small Growth,Silver,0.07
+7,SPDR SSGA US Small Cap Low Volatil ETF,SMLV,Small Blend,,0.12
+8,SPDR S&P 600 Small Cap Value ETF,SLYV,Small Value,,0.15
+9,Vanguard Russell 2000 ETF,VTWO,Small Blend,Bronze,0.15
+10,Vanguard S&P Small-Cap 600 ETF,VIOO,Small Blend,,0.15
+11,SPDR S&P 600 Small Cap ETF,SLY,Small Blend,,0.15
+12,SPDR S&P 600 Small Cap Growth ETF,SLYG,Small Growth,,0.15
+13,iShares Russell 2000 ETF,IWM,Small Blend,Bronze,0.19
+14,Vanguard S&P Small-Cap 600 Value ETF,VIOV,Small Value,,0.2
+15,Vanguard Russell 2000 Value ETF,VTWV,Small Value,,0.2
+16,Vanguard Russell 2000 Growth ETF,VTWG,Small Growth,,0.2
+17,Vanguard S&P Small-Cap 600 Growth ETF,VIOG,Small Growth,,0.2
+18,iShares Russell 2000 Value ETF,IWN,Small Value,Neutral,0.24
+19,iShares Russell 2000 Growth ETF,IWO,Small Growth,Neutral,0.24
+20,iShares S&P Small-Cap 600 Value ETF,IJS,Small Value,Bronze,0.25
+21,Invesco S&P SmallCap Low Volatility ETF,XSLV,Small Value,Bronze,0.25
+22,Schwab Fundamental US Small Company ETF,FNDA,Small Blend,Bronze,0.25
+23,iShares Morningstar Small-Cap ETF,JKJ,Small Blend,,0.25
+24,Invesco Russell 2000 Equal Weight ETF,EQWS,Small Blend,,0.25
+25,iShares S&P Small-Cap 600 Growth ETF,IJT,Small Growth,Bronze,0.25
+26,iShares Morningstar Small-Cap Value ETF,JKL,Small Value,,0.3
+27,iShares Edge MSCI Mltfct USA SmCp ETF,SMLF,Small Blend,,0.3
+28,iShares Morningstar Small-Cap Growth ETF,JKK,Small Growth,,0.3
+29,Invesco S&P SmallCap 600 Pure Value ETF,RZV,Small Value,,0.35
+30,Invesco S&P MidCap 400 Pure Value ETF,RFV,Small Value,,0.35
+31,VictoryShares US Discv Enh Vol Wtd ETF,CSF,Small Blend,,0.35
+32,Invesco S&P SmallCap 600 Pure Gr ETF,RZG,Small Growth,,0.35
+33,WisdomTree US SmallCap Dividend ETF,DES,Small Value,Bronze,0.38
+34,WisdomTree US SmallCap Earnings ETF,EES,Small Blend,,0.38
+35,WisdomTree US SmallCap Qual Div Gr ETF,DGRS,Small Blend,,0.38
+36,Oppenheimer S&P SmallCap 600 Revenue ETF,RWJ,Small Value,,0.39
+37,Invesco Russell 2000 Pure Value ETF,PXSV,Small Value,,0.39
+38,Invesco FTSE RAFI US 1500 Small-Mid ETF,PRFZ,Small Blend,Bronze,0.39
+39,Invesco Russell 2000 Pure Growth ETF,PXSG,Small Growth,,0.39
+40,ProShares Russell 2000 Dividend Growers,SMDV,Small Value,,0.4
+41,Invesco S&P SmallCap 600 Equal Wt ETF,EWSC,Small Blend,,0.4
+42,Invesco Wilshire Micro-Cap ETF,WMCR,Small Blend,,0.58
+43,First Trust Dow Jones Sel MicroCap ETF,FDM,Small Value,,0.6
+44,iShares Micro-Cap ETF,IWC,Small Blend,Neutral,0.6
+45,Invesco DWA SmallCap Momentum ETF,DWAS,Small Growth,,0.6
+46,First Trust Small Cap Core AlphaDEX ETF,FYX,Small Blend,,0.63
+47,First Trust Small Cap Val AlphaDEX ETF,FYT,Small Value,,0.7
+48,First Trust Mid Cap Value AlphaDEX ETF,FNK,Small Value,,0.7
+49,First Trust Small Cap Gr AlphaDEX ETF,FYC,Small Growth,,0.7
+50,AdvisorShares Cornerstone Small Cap ETF,SCAP,Small Growth,,0.9
+51,AlphaMark Actively Managed Small Cap ETF,SMCP,Small Growth,,0.92
+52,Invesco Zacks Micro Cap ETF,PZI,Small Value,,1.24
