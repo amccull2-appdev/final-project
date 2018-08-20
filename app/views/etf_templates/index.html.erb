@@ -22,25 +22,23 @@
   </tr>
 
   <% @etfs.each do |etf| %>
-  <tr>
+    <tr>
 
-    <td>
-      <%= etf.ticker %>
-    </td>
-
-    <td>
-      <%= etf.name %>
-    </td>
-    
-    <td>
-      <%= etf.category %>
-    </td>
-
-    <td>
+      <td>
       <a href="/etfs/<%= etf.id %>">
-        Show details
+        <%= etf.ticker %>
       </a>
+      </td>
+
+      <td>
+        <%= etf.name %>
+      </td>
+
+      <td>
+        <%= etf.category %>
+      </td>
+
     </td>
   </tr>
-  <% end %>
+<% end %>
 </table>

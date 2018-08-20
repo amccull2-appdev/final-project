@@ -1,5 +1,5 @@
 <h1>
-  <%= @etf.name %> <%= @etf.ticker %>
+  <%= @etf.name %> (<%= @etf.ticker %>)
 </h1>
 
 <a href="/etfs/<%= @etf.id %>/edit">
@@ -23,6 +23,13 @@
   <dd>
     <%= @etf.fee %>%
   </dd>
+  
+  <dt>
+    Provider
+  </dt>
+  <dd>
+    <%= @etf.provider %>
+  </dd>
 
   <dt>
     Similarity ranking
@@ -32,10 +39,6 @@
   </dd>
 
 </dl>
-
-<a href="/delete_etf/<%= @etf.id %>">
-  Delete etf
-</a>
 
 <hr>
 
