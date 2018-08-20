@@ -1,5 +1,5 @@
 <!-- Validation failure messages -->
-<% if @holding.present? %>
+<% if @my_holding.present? %>
   <% if @holding.errors.any? %>
     <% @holding.errors.full_messages.each do |message| %>
       <div class="alert alert-danger">
@@ -10,7 +10,7 @@
 <% end %>
 
 <h1>
-  Add a new holding
+  Add a new ETF
 </h1>
 
 <hr>
@@ -19,23 +19,23 @@
   <!-- Label and input for user_id -->
   <div class="form-group">
     <label for="user_id">
-      User
     </label>
 
-    <input type="text" id="user_id" name="user_id" class="form-control" value="<%= @holding.try(:user_id) %>">
+    <input type="hidden" id="user_id" name="user_id" class="form-control" value="<%= current_user.id %>">
   </div>
 
   <!-- Label and input for fund_id -->
   <div class="form-group">
     <label for="fund_id">
-      Fund
+      ETF
     </label>
+    
+    <%= select_tag(:fund_id, options_from_collection_for_select(Etf.all, :id, :name, @holding.try(:fund_id)), :class => "form-control") %>
 
-    <input type="text" id="fund_id" name="fund_id" class="form-control" value="<%= @holding.try(:fund_id) %>">
   </div>
 
   <button class="btn btn-block btn-outline-secondary">
-    Create holding
+    Add to holdings
   </button>
 </form>
 
