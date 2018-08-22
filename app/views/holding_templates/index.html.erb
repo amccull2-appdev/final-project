@@ -10,24 +10,17 @@
 
 <table class="table">
   <tr>
-    <th>
-      ID
-    </th>
 
     <th>
-      User
+      Ticker
     </th>
-
+    
     <th>
       Fund
     </th>
-
+    
     <th>
-      Created at
-    </th>
-
-    <th>
-      Updated at
+      Best replacement fund
     </th>
 
     <th>
@@ -36,31 +29,19 @@
 
   <% @my_holdings.each do |holding| %>
   <tr>
-    <td>
-      <%= holding.id %>
-    </td>
 
     <td>
-      <%= holding.user_id %>
+      <%= Etf.find(holding.fund_id).ticker %>
+    </td>
+    
+    <td>
+      <%= Etf.find(holding.fund_id).name %>
+    </td>
+    
+    <td>
+      ...Similar placeholder...
     </td>
 
-    <td>
-      <%= holding.fund_id %>
-    </td>
-
-    <td>
-      <%= time_ago_in_words(holding.created_at) %> ago
-    </td>
-
-    <td>
-      <%= time_ago_in_words(holding.updated_at) %> ago
-    </td>
-
-    <td>
-      <a href="/holdings/<%= holding.id %>">
-        Show details
-      </a>
-    </td>
   </tr>
   <% end %>
 </table>
