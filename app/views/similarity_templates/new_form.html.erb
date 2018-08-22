@@ -1,0 +1,55 @@
+<!-- Validation failure messages -->
+<% if @similarity.present? %>
+  <% if @similarity.errors.any? %>
+    <% @similarity.errors.full_messages.each do |message| %>
+      <div class="alert alert-danger">
+        <%= message %>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
+
+<h1>
+  Add a new similarity
+</h1>
+
+<hr>
+
+<form action="/create_similarity" method="post">
+  <!-- Label and input for primary_fund -->
+  <div class="form-group">
+    <label for="primary_fund">
+      Primary fund
+    </label>
+
+    <input type="text" id="primary_fund" name="primary_fund" class="form-control" value="<%= @similarity.try(:primary_fund) %>">
+  </div>
+
+  <!-- Label and input for foreign_fund -->
+  <div class="form-group">
+    <label for="foreign_fund">
+      Foreign fund
+    </label>
+
+    <input type="text" id="foreign_fund" name="foreign_fund" class="form-control" value="<%= @similarity.try(:foreign_fund) %>">
+  </div>
+
+  <!-- Label and input for ranking -->
+  <div class="form-group">
+    <label for="ranking">
+      Ranking
+    </label>
+
+    <input type="text" id="ranking" name="ranking" class="form-control" value="<%= @similarity.try(:ranking) %>">
+  </div>
+
+  <button class="btn btn-block btn-outline-secondary">
+    Create similarity
+  </button>
+</form>
+
+<hr>
+
+<a href="/similarities">
+  Go back
+</a>

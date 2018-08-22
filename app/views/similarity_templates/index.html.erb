@@ -1,0 +1,74 @@
+<h1>
+  All similarities
+</h1>
+
+<a href="/similarities/new">
+  Add a new similarity
+</a>
+
+<hr>
+
+<table class="table">
+  <tr>
+    <th>
+      ID
+    </th>
+
+    <th>
+      Primary fund
+    </th>
+
+    <th>
+      Foreign fund
+    </th>
+
+    <th>
+      Ranking
+    </th>
+
+    <th>
+      Created at
+    </th>
+
+    <th>
+      Updated at
+    </th>
+
+    <th>
+    </th>
+  </tr>
+
+  <% @similarities.each do |similarity| %>
+  <tr>
+    <td>
+      <%= similarity.id %>
+    </td>
+
+    <td>
+      <%= similarity.primary_fund %>
+    </td>
+
+    <td>
+      <%= similarity.foreign_fund %>
+    </td>
+
+    <td>
+      <%= similarity.ranking %>
+    </td>
+
+    <td>
+      <%= time_ago_in_words(similarity.created_at) %> ago
+    </td>
+
+    <td>
+      <%= time_ago_in_words(similarity.updated_at) %> ago
+    </td>
+
+    <td>
+      <a href="/similarities/<%= similarity.id %>">
+        Show details
+      </a>
+    </td>
+  </tr>
+  <% end %>
+</table>

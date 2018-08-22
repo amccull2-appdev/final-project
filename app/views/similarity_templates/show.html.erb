@@ -1,0 +1,56 @@
+<h1>
+  Similarity #<%= @similarity.id %> details
+</h1>
+
+<a href="/similarities/<%= @similarity.id %>/edit">
+  Edit similarity
+</a>
+
+<hr>
+
+<dl>
+  <dt>
+    Primary fund
+  </dt>
+  <dd>
+    <%= @similarity.primary_fund %>
+  </dd>
+
+  <dt>
+    Foreign fund
+  </dt>
+  <dd>
+    <%= @similarity.foreign_fund %>
+  </dd>
+
+  <dt>
+    Ranking
+  </dt>
+  <dd>
+    <%= @similarity.ranking %>
+  </dd>
+
+  <dt>
+    Created at
+  </dt>
+  <dd>
+    <%= time_ago_in_words(@similarity.created_at) %> ago
+  </dd>
+
+  <dt>
+    Updated at
+  </dt>
+  <dd>
+    <%= time_ago_in_words(@similarity.updated_at) %> ago
+  </dd>
+</dl>
+
+<a href="/delete_similarity/<%= @similarity.id %>">
+  Delete similarity
+</a>
+
+<hr>
+
+<a href="/similarities">
+  Go back
+</a>

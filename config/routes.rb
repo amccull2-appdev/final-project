@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+  # Routes for the Similarity resource:
+
+  # CREATE
+  get("/similarities/new", { :controller => "similarities", :action => "new_form" })
+  post("/create_similarity", { :controller => "similarities", :action => "create_row" })
+
+  # READ
+  get("/similarities", { :controller => "similarities", :action => "index" })
+  get("/similarities/:id_to_display", { :controller => "similarities", :action => "show" })
+
+  # UPDATE
+  get("/similarities/:prefill_with_id/edit", { :controller => "similarities", :action => "edit_form" })
+  post("/update_similarity/:id_to_modify", { :controller => "similarities", :action => "update_row" })
+
+  # DELETE
+  get("/delete_similarity/:id_to_remove", { :controller => "similarities", :action => "destroy_row" })
+
+  #------------------------------
+
   devise_for :users
   
   # Routes for the Holding resource:
