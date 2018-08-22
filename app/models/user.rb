@@ -33,5 +33,5 @@ class User < ApplicationRecord
   validates :username, :uniqueness => true
 
   has_many :holdings, :dependent => :destroy
-  has_many :owned_etfs
+  has_many :owned_etfs, :through => :holdings, :source => :etf
 end

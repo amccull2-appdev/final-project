@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post("/create_holding", { :controller => "holdings", :action => "create_row" })
 
   # READ
-  get("/holdings", { :controller => "holdings", :action => "index" })
+  # get("/holdings", { :controller => "holdings", :action => "index" })
   get("/holdings/:id_to_display", { :controller => "holdings", :action => "show" })
 
   # UPDATE

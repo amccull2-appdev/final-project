@@ -1,6 +1,6 @@
 class HoldingsController < ApplicationController
   def index
-    @my_holdings = Etf.where(user_id: current_user)
+    @my_holdings = Holding.where(current_user.owned_etfs)
 
     render("holding_templates/index.html.erb")
   end
