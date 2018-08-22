@@ -8,7 +8,6 @@ namespace :slurp do
     csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
     csv.each do |row|
       e = Etf.new
-      # e.id = row["id"]
       e.name = row["name"]
       e.ticker = row["ticker"]
       e.category = row["category"]
