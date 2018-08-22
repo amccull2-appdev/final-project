@@ -16,22 +16,22 @@
 <hr>
 
 <form action="/create_holding" method="post">
-  <!-- Label and input for user_id -->
-  <div class="form-group">
-    <label for="user_id">
-    </label>
-
-    <input type="hidden" id="user_id" name="user_id" class="form-control" value="<%= current_user.id %>">
-  </div>
-
   <!-- Label and input for fund_id -->
   <div class="form-group">
     <label for="fund_id">
       ETF
     </label>
     
-    <%= select_tag(:fund_id, options_from_collection_for_select(Etf.all, :id, :name, @holding.try(:fund_id)), :class => "form-control") %>
+    <%= select_tag(:fund_id, options_from_collection_for_select(Etf.all, :id, :name), :class => "form-control") %>
 
+  </div>
+
+  <!-- Label and input for user_id -->
+  <div class="form-group">
+    <label for="user_id">
+    </label>
+
+    <input type="hidden" id="user_id" name="user_id" class="form-control" value="<%= current_user.id %>">
   </div>
 
   <button class="btn btn-block btn-outline-secondary">
