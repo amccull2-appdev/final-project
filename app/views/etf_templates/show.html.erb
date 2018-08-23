@@ -32,7 +32,7 @@
   </dt>
   <dd>
     <%= @etf.best_match.name %>
-    <%= @etf.best_match.ticker %>
+    <%= link_to @etf.best_match.ticker, "/etfs/#{@etf.best_match.id}" %>
   </dd>
 
 </dl>
