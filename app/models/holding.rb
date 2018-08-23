@@ -15,5 +15,5 @@ class Holding < ApplicationRecord
   validates :fund_id, :uniqueness => { :scope => [:user_id], :message => "You already own this fund" }
   
   belongs_to :user
-  belongs_to :etf
+  belongs_to :etf, :foreign_key => "fund_id"
 end

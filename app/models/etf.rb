@@ -21,4 +21,16 @@ class Etf < ApplicationRecord
   
   has_many :holdings, :dependent => :destroy, :foreign_key => "fund_id"
   has_many :owners, :through => :holdings, :source => :user
+  
+  # has_many :similarities_as_primary, :foreign_key => "primary_fund", :class_name => "Similarity"
+  
+  def best_match
+    matching_similarities = Similarity.where(:primary_fund => self.ticker)
+    
+    best_similarity = matching_similarities.order(:ranking).first
+    
+    best_etf = Etf.find_by({ :ticker => best_similarity.foreign_fund })
+    
+    return best_etf
+  end
 end

@@ -64,8 +64,8 @@ ActiveRecord::Schema.define(version: 20180822212322) do
   end
 
   create_table "similarities", force: :cascade do |t|
-    t.integer "primary_fund"
-    t.integer "foreign_fund"
+    t.string "primary_fund"
+    t.string "foreign_fund"
     t.integer "ranking"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
