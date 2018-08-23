@@ -26,15 +26,12 @@
       Best replacement name
     </th>
 
-    <th>
-      Best replacement fee
-    </th>
   </tr>
 
   <% @my_holdings.each do |holding| %>
   <tr>
 
-    <td>
+    <td align="center">
       <%= link_to Etf.find(holding.fund_id).ticker, "/etfs/#{Etf.find(holding.fund_id).id}" %>
     </td>
     
@@ -43,19 +40,11 @@
     </td>
     
     <td align="center">
-      <%= Etf.find(holding.fund_id).fee %>
-    </td>
-    
-    <td>
       <%= link_to Etf.find(holding.fund_id).best_match.ticker, "/etfs/#{Etf.find(holding.fund_id).best_match.id}" %>
     </td>
     
     <td>
       <%= Etf.find(holding.fund_id).best_match.name %>
-    </td>
-    
-    <td align="center">
-      <%= Etf.find(holding.fund_id).best_match.fee %>
     </td>
 
   </tr>
