@@ -39,7 +39,8 @@
     </td>
     
     <td>
-      ...Similar placeholder...
+      <%= Etf.find(holding.fund_id).best_match.name %>
+      <%= Etf.find(holding.fund_id).best_match.ticker %>
     </td>
 
   </tr>
