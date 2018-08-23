@@ -26,7 +26,7 @@ class HoldingsController < ApplicationController
 
       redirect_to("/holdings", :notice => "Holding created successfully.")
     else
-      render("holding_templates/new_form.html.erb")
+      redirect_to("/holdings/new", :notice => "You already own that fund. Please select another.")
     end
   end
 

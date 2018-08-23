@@ -31,7 +31,7 @@
   <tr>
 
     <td>
-      <%= Etf.find(holding.fund_id).ticker %>
+      <%= link_to Etf.find(holding.fund_id).ticker, "/etfs/#{Etf.find(holding.fund_id).id}" %>
     </td>
     
     <td>

@@ -10,7 +10,7 @@
 <% end %>
 
 <h1>
-  Add a new ETF
+  Add a new ETF to holdings
 </h1>
 
 <hr>
@@ -19,7 +19,7 @@
   <!-- Label and input for fund_id -->
   <div class="form-group">
     <label for="fund_id">
-      ETF
+      ETF to add to holdings
     </label>
     
     <%= select_tag(:fund_id, options_from_collection_for_select(Etf.all, :id, :name), :class => "form-control") %>
