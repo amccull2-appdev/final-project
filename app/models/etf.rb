@@ -32,5 +32,17 @@ class Etf < ApplicationRecord
     best_etf = Etf.find_by({ :ticker => best_similarity.foreign_fund })
     
     return best_etf
+  
+  end
+
+  def second_best_match
+    matching_similarities = Similarity.where(:primary_fund => self.ticker)
+    
+    second_best_similarity = matching_similarities.order(:ranking).second
+    
+    second_best_etf = Etf.find_by({ :ticker => second_best_similarity.foreign_fund })
+    
+    return second_best_etf
+    
   end
 end

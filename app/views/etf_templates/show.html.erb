@@ -28,12 +28,23 @@
   </dd>
 
   <dt>
-    ETF Most Similar to <%= @etf.ticker %>
+    Most Similar ETF to <%= @etf.ticker %>
   </dt>
   <dd>
     <%= @etf.best_match.name %>
     <%= link_to @etf.best_match.ticker, "/etfs/#{@etf.best_match.id}" %>
   </dd>
+  
+  
+  <dt>
+    Second Most Similar ETF to <%= @etf.ticker %>
+  </dt>
+  <dd>
+    <%= @etf.second_best_match.name %>
+    <%= link_to @etf.second_best_match.ticker, "/etfs/#{@etf.second_best_match.id}" %>
+  </dd>
+  
+  
 
 </dl>
 
