@@ -6,24 +6,32 @@
   Add a new holding
 </a>
 
-<hr>
 
 <table class="table">
   <tr>
 
     <th>
-      Ticker
+      Holding ticker
     </th>
     
     <th>
-      ETF Name
+      Holding name
     </th>
     
     <th>
-      Best replacement fund
+      Holding fee
+    </th>
+    
+    <th>
+      Best replacement ticker
+    </th>
+    
+    <th>
+      Best replacement name
     </th>
 
     <th>
+      Best replacement fee
     </th>
   </tr>
 
@@ -38,14 +46,21 @@
       <%= Etf.find(holding.fund_id).name %>
     </td>
     
+    <td align="center">
+      <%= Etf.find(holding.fund_id).fee %>
+    </td>
+    
     <td>
-      <%= Etf.find(holding.fund_id).best_match.name %>
       <%= link_to Etf.find(holding.fund_id).best_match.ticker, "/etfs/#{Etf.find(holding.fund_id).best_match.id}" %>
     </td>
     
-
-
-
+    <td>
+      <%= Etf.find(holding.fund_id).best_match.name %>
+    </td>
+    
+    <td align="center">
+      <%= Etf.find(holding.fund_id).best_match.fee %>
+    </td>
 
   </tr>
   <% end %>
