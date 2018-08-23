@@ -2,10 +2,6 @@
   <%= @etf.name %> (<%= @etf.ticker %>)
 </h1>
 
-<a href="/etfs/<%= @etf.id %>/edit">
-  Edit etf
-</a>
-
 <hr>
 
 <dl>
@@ -35,7 +31,8 @@
     ETF Most Similar to <%= @etf.ticker %>
   </dt>
   <dd>
-    <%= @etf.similarity_ranking %>
+    <%= @etf.best_match.name %>
+    <%= @etf.best_match.ticker %>
   </dd>
 
 </dl>
