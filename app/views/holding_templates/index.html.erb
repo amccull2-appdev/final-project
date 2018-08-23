@@ -1,5 +1,5 @@
 <h1>
-  Holdings for <%= @current_user.username %>
+  Current ETF holdings for <%= @current_user.username %>
 </h1>
 
 <a href="/holdings/new">
@@ -40,8 +40,10 @@
     
     <td>
       <%= Etf.find(holding.fund_id).best_match.name %>
-      <%= Etf.find(holding.fund_id).best_match.ticker %>
+      <%= link_to Etf.find(holding.fund_id).best_match.ticker, "/etfs/#{Etf.find(holding.fund_id).best_match.id}" %>
     </td>
+    
+
 
 
 
